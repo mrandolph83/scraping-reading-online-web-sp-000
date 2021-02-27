@@ -1,3 +1,4 @@
+require 'pry'
 require 'nokogiri'
 require 'open-uri'
 
@@ -8,3 +9,4 @@ Nokogiri::HTML(html)
 doc = Nokogiri::HTML(html)
 
 puts doc.css(".headline-260IBN").text
+binding.pry
